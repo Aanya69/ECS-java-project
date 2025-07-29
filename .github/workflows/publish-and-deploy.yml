@@ -3,6 +3,8 @@ name: Publish and Deploy
 
 on:
   push:
+    branches: 
+      - master
     tags:
       - 'v*.*.*'  # Triggers on version tags like v1.0.0
 

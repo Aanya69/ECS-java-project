@@ -5,7 +5,7 @@ FROM openjdk:17-jdk-slim
 WORKDIR /app
 
 # Copy the built jar file into the container
-COPY target/*.jar app.jar
+COPY ecsjavaapp/target/*.jar app.jar
 
 # Run the jar file
 ENTRYPOINT ["java", "-jar", "app.jar"]

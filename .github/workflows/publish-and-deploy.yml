@@ -24,6 +24,7 @@ jobs:
 
     - name: Build with Maven
       run: mvn clean package -DskipTests
+      working-directory: ecsjavaapp
 
     - name: Log in to DockerHub
       uses: docker/login-action@v2

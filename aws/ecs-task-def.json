@@ -1,0 +1,21 @@
+{
+  "family": "github-actions-tutorial-task-def-family",
+  "networkMode": "awsvpc",
+  "containerDefinitions": [
+    {
+      "name": "test-container",
+      "image": "Aanya69/ecsjavaapp:latest",
+      "portMappings": [
+        {
+          "containerPort": 8081
+        }
+      ],
+      "essential": true
+    }
+  ],
+  "requiresCompatibilities": ["FARGATE"],
+  "cpu": "256",
+  "memory": "512",
+  "executionRoleArn": "arn:aws:iam::767397806650:role/ecs-Task-ExecutionRole"
+
+}
